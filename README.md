@@ -16,10 +16,10 @@
 * karma & mocha
 * browserify & babel - `babel` runs as a plugin of `browserify`.
 * coverage    - use `isparta` for support es6.
-* saucelabs   - you should set `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY` on your system environment.
+* saucelabs   - you should first set `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY` on your system environment.
 
 
-## Test
+## Run Test
 
 * `npm test` - local test
 * `npm run test-sl` - test on saucelabs
@@ -58,9 +58,11 @@
 
 ## Todo
 
-- [x] Auto enable saucelabs test when push to github, [the reason](https://github.com/qiu8310/demo-web-babel/issues/1)
-  - [x] Can't stop saucelabs test on travis, example: [travis build #67801561](https://travis-ci.org/qiu8310/demo-web-babel/builds/67801561)
+- [x] Auto enable saucelabs test when push to github
+  - [x] Can't stop saucelabs test on travis, [example](https://travis-ci.org/qiu8310/demo-web-babel/builds/67801561), [reason](https://github.com/qiu8310/demo-web-babel/issues/1)
+- [ ] karma coverage does not show any data in CLI, [it is a `karma-coverage` issue](https://github.com/qiu8310/demo-web-babel/issues/2)
 - [ ] Make a yeoman generator
+
 
 ## Reference
 

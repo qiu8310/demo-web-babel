@@ -13,6 +13,8 @@ module.exports = function(config) {
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
 
+    port: 9876,
+
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: [
@@ -34,6 +36,10 @@ module.exports = function(config) {
     },
 
     coverageReporter: {
+      reporters: [
+        { type: 'html' },
+        { type: 'lcovonly' }
+      ],
       instrumenters: { isparta : require('isparta') },
       instrumenter: {
         '**/*.js': 'isparta'
@@ -55,7 +61,7 @@ module.exports = function(config) {
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: [
-      'PhantomJS'
+      'PhantomJS'//, 'Firefox'
     ]
 
   });

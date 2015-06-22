@@ -58,8 +58,8 @@
 
 ## Todo
 
-- [x] Auto enable saucelabs test when push to github, [reason](issues/1)
-  - [x] Can't stop saucelabs test on travis, example [build #67801561](https://travis-ci.org/qiu8310/demo-web-babel/builds/67801561)
+- [x] Auto enable saucelabs test when push to github, [the reason](https://github.com/qiu8310/demo-web-babel/issues/1)
+  - [x] Can't stop saucelabs test on travis, example: [travis build #67801561](https://travis-ci.org/qiu8310/demo-web-babel/builds/67801561)
 - [ ] Make a yeoman generator
 
 ## Reference
